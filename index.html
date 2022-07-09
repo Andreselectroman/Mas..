@@ -47,7 +47,27 @@
                 Inicialmente, la imagen tendrá la camiseta de fondo que tiene transparencia.
                 Entonces, simplemente podemos actualizar el color con CSS o JavaScript dinámicamente
             -->
-            <img id="tshirt-backgroundpicture" src="./camiseta.png"/>
+           -->
+            <script type="text/javascript">
+                function cambiarImagen(){
+                    var objImagen = document.getElementById('colores');
+                    var objFondo = document.getElementById('tshirt-backgroundpicture');
+                    objFondo.src = objImagen.value;
+                   
+                }
+            </script>    
+            </head>
+             
+            <body>
+            <form>
+                <select id="colores" name="colores" onchange="cambiarImagen()">
+                    <option value="./camiseta.png">Hoddie</option>
+                    <option value="./cami.png">Camiseta</option>
+                  
+                </select>
+            </form>
+             
+            <img id="tshirt-backgroundpicture" src="./camiseta.png" />
 
             <div id="drawingArea" class="drawing-area">					
                 <div class="canvas-container">
