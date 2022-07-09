@@ -42,14 +42,11 @@
     </head>
     <body>
         <!-- Crea el contenedor de la herramienta -->
-        <div id="tshirt-div">
+         <div id="tshirt-div">
             <!-- 
                 Inicialmente, la imagen tendrá la camiseta de fondo que tiene transparencia.
                 Entonces, simplemente podemos actualizar el color con CSS o JavaScript dinámicamente
             -->
-             <p>Bienvenido a la tienda personalizable MAS para eliminar una imagen cargada en la camiseta, selecciónela y presione la tecla DEL selecciona la imagen que te guste o sube una tuya ajusta el tamaño,posicion y ángulo</p>
-            SELECCIONA LA PRENDA QUE DESEAS PERSONALIZAR
-        
             <script type="text/javascript">
                 function cambiarImagen(){
                     var objImagen = document.getElementById('colores');
@@ -71,12 +68,18 @@
              
             <img id="tshirt-backgroundpicture" src="./camiseta.png" />
 
+
+
+           
+                  
+                
+
             <div id="drawingArea" class="drawing-area">					
                 <div class="canvas-container">
                     <canvas id="tshirt-canvas" width="200" height="400"></canvas>
                 </div>
             </div>
-       
+        </div>
         
        
         <!-- La selección que permitirá al usuario elegir uno de los diseños estáticos. -->
