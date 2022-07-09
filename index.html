@@ -97,7 +97,7 @@
         <label for="tshirt-color">Color:</label>
         <select id="tshirt-color">
             <!-- Puede agregar cualquier color con una nueva opción y definiendo su código hexadecimal -->
-            <option value="#fff">Blanco/option>
+            <option value="#fff">Blanco</option>
             <option value="#000">Negro</option>
             <option value="#f00">Rojo</option>
             <option value="#008000">Verde</option>
@@ -116,8 +116,8 @@
 
             function updateTshirtImage(imageURL){
                 fabric.Image.fromURL(imageURL, function(img) {                   
-                    img.scaleToHeight(300);
-                    img.scaleToWidth(300); 
+                    img.scaleToHeight(320);
+                    img.scaleToWidth(320); 
                     canvas.centerObject(img);
                     canvas.add(img);
                     canvas.renderAll();
