@@ -17,14 +17,14 @@
 
             .canvas-container{
                 width: 200px; 
-                height: 400px; 
+                height: 390px; 
                 position: relative; 
                 user-select: none;
             }
 
             #tshirt-div{
                 width: 452px;
-                height: 548px;
+                height: 550px;
                 position: relative;
                 background-color: #fff;
             }
@@ -116,8 +116,8 @@
 
             function updateTshirtImage(imageURL){
                 fabric.Image.fromURL(imageURL, function(img) {                   
-                    img.scaleToHeight(320);
-                    img.scaleToWidth(320); 
+                    img.scaleToHeight(300);
+                    img.scaleToWidth(300); 
                     canvas.centerObject(img);
                     canvas.add(img);
                     canvas.renderAll();
